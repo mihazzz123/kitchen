@@ -1,0 +1,42 @@
+.blog 
+  padding-bottom: 130px
+  &-item 
+    margin-bottom: 20px
+    &__wrap
+      height: 450px
+      padding: 20px
+      border: 1px solid #c8c8c8
+    &__img
+      width: 100%
+      margin-bottom: 30px
+    &__title 
+      margin-bottom: 20px
+      display: inline-block
+      font-size: 1em
+      font-weight: 700
+    &__desc
+      display: inline-block
+      color: #464646
+      font-weight: 300
+      & strong, a 
+        font-weight: 700
+      & a 
+        &:hover, &:focus
+          color: lighten($color-main, 15%)
+
+@media (max-width: 1200px)
+  .blog
+    &-item 
+      &__wrap
+        height: 480px
+@media (max-width: 992px)
+  .blog
+    &-item 
+      &__wrap
+        height: 530px
+@media (max-width: 764px)
+  .blog
+    padding-bottom: 100px
+    &-item 
+      &__wrap
+        height: 500px

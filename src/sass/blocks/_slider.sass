@@ -1,0 +1,72 @@
+.slider
+  padding-bottom: 50px
+  &-block 
+    display: flex
+    width: 100%
+    justify-content: space-between
+  &-slide 
+    width: 19%
+    height: 150px
+    display: flex !important
+    align-items: center
+    justify-content: center
+    outline: none
+    &__img
+      display: block
+      height: auto
+      width: auto
+      max-height: 100%
+      max-width: 100%
+      padding-left: 7px
+      padding-right: 7px
+  &-arrow 
+    position: absolute
+    top: 45%
+    opacity: 0.5
+    display: none
+    font-size: 2em
+    &__left 
+      left: -20px
+    &__right 
+      right: -20px
+  & .slick-center
+    height: 200px
+    width: 270px !important
+    & img 
+      height: 200px
+      width: 270px
+  & .slick-track
+    display: flex
+    align-items: center
+
+.slider, .blog
+  & .container
+    padding-top: 40px
+    position: relative
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      width: 98%
+      left: 1%
+      top: 0
+      height: 1px
+      background: #c8c8c8
+
+@media (max-width: 546px)
+  .slider 
+    & .slick-center
+      height: 190px
+      width: 290px !important
+      & img 
+        height: 190px
+        width: 290px
+// @media (max-width: 490px)
+//   .slider 
+//     & .slick-center
+//       height: auto
+//       width: auto !important
+//       max-width: 390px
+//       & img 
+//         height: 190px
+//         width: 290px
